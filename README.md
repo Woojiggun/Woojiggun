@@ -29,3 +29,5 @@ I explore how to define problems and reshape structures with technology.
 📘 [View Notion Portfolio](https://www.notion.so/1db0e892f462807eb839d211f14692ad)  
 💻 [See All Repositories](https://github.com/Woojiggun?tab=repositories)
 
+📌 Note: Full source code is not publicly available due to internal use cases.  
+Key logic or demo may be shared upon request.
