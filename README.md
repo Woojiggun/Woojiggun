@@ -1,33 +1,57 @@
-# 나무늛의 사유하는 자동화 실험실 🧠
+# Jinhyun Woo
 
-## 🇰🇷 소개 (Korean)
-반복되는 고객지원, 물류, 운영 업무 속에서
-실행 가능한 도구를 만들어 더 나은 흐름을 실험하고 있습니다.
+**Independent AI researcher building HSL and HoLo**
 
-- PowerShell 기반 Excel 자동화
-- 상담 스크립트 기반 챗봇 UI (HTML/JS)
-- 쿠팡 물류 자동화 (Excel VBA)
+I study whether deterministic, byte-native structural signals can replace part of the learned tokenizer and embedding stack while preserving useful model behavior. HoLo is the integration and evaluation vehicle; HSL is the core research product.
 
-기술을 전공하지 않았지만,
-문제를 정의하고 기술을 통해 구조를 바꾸는 실험을 이어갑니다.
+This is an open, evidence-first project. I publish code, weights, matched controls, implementation limits, and negative results. The current claim is **works and is worth measuring**, not SOTA.
 
-📘 [Notion 포트폴리오 보기](https://www.notion.so/1db0e892f462807eb839d211f14692ad)  
-💻 [전체 리포지토리 보기](https://github.com/Woojiggun?tab=repositories)
+## Research portfolio
+
+| Project | What it tests | Public evidence |
+| --- | --- | --- |
+| [HSL](https://github.com/Woojiggun/holo-hsl) | A deterministic, modality-agnostic structural signal substrate | Core repository, specifications, experiments, and reports |
+| [hsl-embedding](https://github.com/Woojiggun/hsl-embedding) | Reproducible byte-to-HSL feature generation | Python package, tests, and CI |
+| [hsl-embedding-zero](https://github.com/Woojiggun/hsl-embedding-zero) | Transformer input with zero learned input parameters | Python package, tests, CI, and released weights |
+| [HoLo_ZeRo](https://github.com/Woojiggun/HoLo_ZeRo) | Language-model integration of the zero-input path | Training code, checkpoints, and documented limitations |
+| [HoLo-ToLk-STT](https://github.com/Woojiggun/HoLo-ToLk-STT) | HSL-based speech recognition | Four-seed matched experiments and released artifacts |
+| [HoLo-ToLk-TTS](https://github.com/Woojiggun/HoLo-ToLk-TTS) | HSL-based text-to-speech | Working prototype, code, and weights; perceptual evaluation remains open |
+| [HoLo-FuSe](https://github.com/Woojiggun/HoLo-FuSe) | Frozen HSL features in diffusion conditioning | Reproducible prototype and retained negative-control evidence |
+
+## Current research
+
+- Controlled language-model studies on clean English and Korean corpora
+- Byte-level BPB, memory, throughput, parameter, and convergence economics
+- Exact long-context and autoregressive rollout diagnostics
+- Matched ablations that separate data quality, input representation, optimization, and scale
+- Speech, diffusion, and autonomous-system prototypes as cross-modal feasibility studies
+
+The language path remains harder than conventional learned BPE embeddings: token IDs are not used as learned semantic inputs. That makes direct quality comparisons incomplete unless parameter cost, byte exposure, compute, and convergence are matched.
+
+## Research principles
+
+- **Works-not-wins:** feasibility before superiority claims
+- **Matched controls:** same data, exposure, seed, and evaluation whenever possible
+- **Negative results stay public:** rejected paths are evidence, not hidden failures
+- **Reproducibility:** code, weights, hashes, and run contracts where practical
+- **Economy matters:** quality is evaluated together with parameters, VRAM, throughput, and data cost
+
+## Links
+
+- [GitHub repositories](https://github.com/Woojiggun?tab=repositories)
+- [Hugging Face models and demos](https://huggingface.co/ggunio)
+- [HSL on PyPI](https://pypi.org/project/hsl-embedding/)
+- [Zero-input package on PyPI](https://pypi.org/project/hsl-embedding-zero/)
+- Contact: `ggunio5782@gmail.com`
+
+## Compute collaboration
+
+I am seeking research-compute sponsorship or credits for reproducible scaling studies, especially controlled HSL/HoLo language, speech, and diffusion experiments. The immediate goal is not to declare a breakthrough; it is to determine rigorously where the approach works, where it fails, and whether its parameter and memory economics survive at larger scale.
 
 ---
 
-## 🌐 About Me (English)
-I design practical tools to improve workflows in customer support, logistics, and operations.
+## 한국어 요약
 
-- Excel automation using PowerShell
-- Script-based chatbot UI in HTML/JS
-- Logistics flow automation with Excel VBA
+HSL은 바이트에서 고정 구조 신호를 만드는 입력 기판이며, HoLo는 이를 언어·음성·이미지 모델에서 검증하는 통합 연구입니다. 학습된 토큰 임베딩 일부를 고정 신호로 대체할 수 있는지, 그리고 그 과정에서 파라미터·메모리·처리량 측면의 경제성이 유지되는지를 공개 실험으로 확인하고 있습니다.
 
-Though I’m not a trained developer,
-I explore how to define problems and reshape structures with technology.
-
-📘 [View Notion Portfolio](https://www.notion.so/1db0e892f462807eb839d211f14692ad)  
-💻 [See All Repositories](https://github.com/Woojiggun?tab=repositories)
-
-📌 Note: Full source code is not publicly available due to internal use cases.  
-Key logic or demo may be shared upon request.
+현재 공개된 결과는 가능성과 작동성을 보여 주지만 완성형이나 성능 우위를 뜻하지 않습니다. 코드, 가중치, 대조군, 실패 사례를 함께 공개하며 더 큰 규모의 재현 가능한 검증을 위한 컴퓨팅 협력을 찾고 있습니다.
