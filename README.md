@@ -24,7 +24,8 @@ This is an open, evidence-first project. I publish code, weights, matched contro
 - Byte-level BPB, memory, throughput, parameter, and convergence economics
 - Exact long-context and autoregressive rollout diagnostics
 - Matched ablations that separate data quality, input representation, optimization, and scale
-- Speech, diffusion, and autonomous-system prototypes as cross-modal feasibility studies
+- Speech and diffusion prototypes as cross-modal feasibility studies
+- A private exploratory autonomous-system prototype, not presented as public evidence
 
 The language path remains harder than conventional learned BPE embeddings: token IDs are not used as learned semantic inputs. That makes direct quality comparisons incomplete unless parameter cost, byte exposure, compute, and convergence are matched.
 
