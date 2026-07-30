@@ -40,7 +40,8 @@ The language path remains harder than conventional learned BPE embeddings: token
 ## Links
 
 - [GitHub repositories](https://github.com/Woojiggun?tab=repositories)
-- [Hugging Face models and demos](https://huggingface.co/ggunio)
+- [Curated Hugging Face research collection](https://huggingface.co/collections/ggunio/hsl-holo-open-feasibility-portfolio-6a6b38f6016eb6fe23bcc9ea)
+- [All Hugging Face models and demos](https://huggingface.co/ggunio)
 - [HSL on PyPI](https://pypi.org/project/hsl-embedding/)
 - [Zero-input package on PyPI](https://pypi.org/project/hsl-embedding-zero/)
 - [HSL paper on Zenodo](https://doi.org/10.5281/zenodo.20581805)
