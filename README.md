@@ -6,6 +6,14 @@ I study whether deterministic, byte-native structural signals can replace part o
 
 This is an open, evidence-first project. I publish code, weights, matched controls, implementation limits, and negative results. The current claim is **works and is worth measuring**, not SOTA.
 
+## Reviewer shortcut
+
+- [One-page compute research brief](COMPUTE_RESEARCH_BRIEF.md)
+- [Latest matched language evidence: two epochs, 3.303B target bytes per arm](https://github.com/Woojiggun/holo-hsl/blob/master/EVIDENCE_TINY_KO_20260730.md)
+- [Curated Hugging Face models, demos, and weights](https://huggingface.co/collections/ggunio/hsl-holo-open-feasibility-portfolio-6a6b38f6016eb6fe23bcc9ea)
+
+The latest controlled gate found a small validation/test BPB improvement from exact previous-byte feedback at only +864 parameters and approximately 0.58% wall-throughput cost. It did **not** solve late-slot error propagation or weak free generation; those remain explicit targets for a convergence and matched-baseline study.
+
 ## Research portfolio
 
 | Project | What it tests | Public evidence |
@@ -51,7 +59,7 @@ The language path remains harder than conventional learned BPE embeddings: token
 
 ## Compute collaboration
 
-I am seeking research-compute sponsorship or credits for reproducible scaling studies, especially controlled HSL/HoLo language, speech, and diffusion experiments. The immediate goal is not to declare a breakthrough; it is to determine rigorously where the approach works, where it fails, and whether its parameter and memory economics survive at larger scale.
+I am seeking research-compute sponsorship or credits for reproducible scaling studies, especially controlled HSL/HoLo language, speech, and diffusion experiments. The immediate goal is not to declare a breakthrough; it is to determine rigorously where the approach works, where it fails, and whether its parameter and memory economics survive at larger scale. The [compute research brief](COMPUTE_RESEARCH_BRIEF.md) specifies a 100 H100-hour pilot with measurable success and rejection criteria.
 
 ---
 
